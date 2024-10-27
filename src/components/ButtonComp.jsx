@@ -1,8 +1,12 @@
-const ButtonComp = ({ text, onclick }) => {
+const ButtonComp = ({ text, onclick, className }) => {
 	const handleClick = (e) => {
 		onclick(e)
 	}
-	return <button onClick={handleClick}>{text}</button>
+	return (
+		<button className={`btn ${className}`} onClick={handleClick}>
+			{text}
+		</button>
+	)
 }
 
 export default ButtonComp

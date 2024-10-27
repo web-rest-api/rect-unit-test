@@ -12,8 +12,53 @@ code {
     monospace;
 }
 
-.button-container{
-  display: flex;
+.btn {
+  text-decoration: none;
+  color: #282c34;
+  text-align: center;
+  letter-spacing: .5px;
+  font-size: 14px;
+  outline: 0;
+  cursor: pointer;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 16px;
+  text-transform: uppercase;
+  transition: .3s ease-out;
+}
+
+.btn-primary {
+  background-color: #61dafb;
+}
+
+.btn-danger {
+  background-color: #ee6e73;
+}
+
+.btn-primary:hover {
+  background-color: #2bbbad;
+}
+
+.btn-secondary {
+  background-color: rgb(3, 152, 216);
+}
+
+.btn-danger:hover {
+  background-color: #d66266;
+}
+
+.btn-secondary:hover {
+  background-color: rgb(3, 103, 146);
+
+}
+
+.button-container {
+  display: grid;
+  /* grid-area: 2 / 1 / span 2 / span 3; */
   gap: .75em;
   padding: 1em;
 }

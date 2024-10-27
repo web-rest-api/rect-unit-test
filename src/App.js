@@ -22,9 +22,21 @@ function App({ appText }) {
 				<p data-testid="paragraph-element">{appText}</p>
 				<ResultComp result={result}></ResultComp>
 				<div className="button-container">
-					<ButtonComp onclick={addFn} text="Add"></ButtonComp>
-					<ButtonComp onclick={restFn} text="Rest"></ButtonComp>
-					<ButtonComp onclick={resetFn} text="Reset"></ButtonComp>
+					<ButtonComp
+						onclick={addFn}
+						text="Add"
+						className={"btn-primary"}
+					></ButtonComp>
+					<ButtonComp
+						onclick={restFn}
+						text="Rest"
+						className={"btn-secondary"}
+					></ButtonComp>
+					<ButtonComp
+						onclick={resetFn}
+						text="Reset"
+						className={"btn-danger"}
+					></ButtonComp>
 				</div>
 			</header>
 		</div>
